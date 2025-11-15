@@ -2,35 +2,55 @@
 <html>
 <head>
     <title>My Biodata</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Justification: Internal CSS for page-specific customization (Layout focus) */
+        .bio-section {
+            /* Ensures the biodata text is left-aligned within the container */
+            text-align: left;
+            padding-left: 20px; 
+        }
+
+        /* Center the image within its container */
+        .container img {
+            display: block;
+            margin: 0 auto 20px auto;
+        }
+
+        .bio-section strong {
+            display: inline-block;
+            width: 150px; /* Gives a fixed width to align values */
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a> | 
-        <a href="contact.html">Contact Me</a>
-    </nav>
-    
-    <br>
+    <div class="container">
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="contact.html">Contact Me</a>
+        </nav>
+        
+        <h1 style="color: #ff5722;">My Biodata</h1>
+        <img src="me.jpg" alt="My Photo" width="150" height="200">
+        
+        <div class="bio-section">
+            <p>
+                <strong>Name:</strong> Graciela Arriya Anak Hercules <br>
+                <strong>Student ID:</strong> 99069<br>
+                <strong>Programme:</strong> Cognitive Science<br>
+                <strong>Birthday:</strong> 18-08-2003<br>
+                <strong>Origin:</strong> Kuching, Sarawak
+            </p>
+        </div>
 
-    <h1>My Biodata</h1>
+        <a href="contact.html">
+            <button>Contact me</button>
+        </a>
+        
+    </div>
     
-    <img src="me.jpg" alt="My Photo" width="150" height="200">
-    
-    <br><br>
-    
-    <p>
-        <strong>Name:</strong> Graciela Arriya Anak Hercules <br>
-        <strong>Student ID:</strong> 99069<br>
-        <strong>Programme:</strong> Cognitive Science<br>
-        <strong>Birthday:</strong> 18-08-2003<br>
-        <strong>Origin:</strong> Kuching, Sarawak
-    </p>
-
-    <a href="contact.html">
-        <button>Contact me</button>
-    </a>
-    
-    <br>
-
     <p>&copy; 2025 UNIMAS</p>
     
 </body>
